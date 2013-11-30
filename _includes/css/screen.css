@@ -29,7 +29,6 @@
 html, body {
   height: 100%;
   max-width: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -146,6 +145,19 @@ ul.posts li .post-category {
   margin: 0 0 10px 0;
 }
 
+.meta a i {
+  -webkit-transition: color 300ms ease;
+  -moz-transition: color 300ms ease;
+  -o-transition: color 300ms ease;
+  transition: color 300ms ease;
+}
+.meta a i:hover {
+  color: #ED4035;
+}
+.meta a i:visited:hover {
+  color: #ED4035;
+}
+
 .site .footer {
   font-size: 80%;
   color: #666;
@@ -179,6 +191,9 @@ nav .nav-links a:hover {
 nav .nav-links a:visited {
   color: #999;
 }
+nav .nav-links a:visited:hover {
+  color: #ED4035;
+}
 nav .nav-links a:active {
   color: #999;
 }
@@ -192,7 +207,7 @@ nav hr {
 
 #social {
   margin-bottom: 10px;
-  font-size: 13px;
+  color: #999;
 }
 
 #post pre {
