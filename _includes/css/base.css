@@ -55,6 +55,7 @@
 		background: #fff;
 		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #444;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
  }
 
@@ -112,15 +113,12 @@
 	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
 	ul ul li, ul ol li,
 	ol ol li, ol ul li { margin-bottom: 6px; }
-	li { margin-bottom: 12px; }
+	li { line-height: 18px; margin-bottom: 12px; }
 	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
 
 /* #Images
 ================================================== */
-
-	img {
-		max-width: 100%;
-	}
 
 	img.scale-with-grid {
 		max-width: 100%;
