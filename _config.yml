@@ -7,11 +7,11 @@ exclude: [LICENSE, CNAME, README.md, .gitignore]
 # Theme customization - please change from the defaults!
 theme:
   # Color for top bar, links, etc
-  highlight_color: '#3498db'
+  highlight_color: '#ED4035'
 
   # Profile links on the left sidebar, leave blank to ignore
   social:
-    github: swanson
+    github: gianjohansen
     #bitbucket: philipj
     hacker_news: swanson
     #stackexchange: 348619
@@ -23,8 +23,8 @@ theme:
     #gplus: 110552447039675960964
 
   # "Hi, I'm _______"
-  name: Matt Swanson
-  email: test@example.com
+  name: Gian Johansen
+  email: gianjohansen@gmail.com
   tagline: "weak opinions, strongly held"
 
   # Google Analytics key, leave blank to ignore
