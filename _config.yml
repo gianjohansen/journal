@@ -1,6 +1,6 @@
 # General Jekyll Config
 pygments: true
-url: http://example.com
+url: https://github.com/gianjohansen
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore]
 
@@ -13,13 +13,13 @@ theme:
   social:
     github: gianjohansen
     #bitbucket: philipj
-    hacker_news: swanson
+    #hacker_news: swanson
     #stackexchange: 348619
     #stackoverflow: 348619
-    twitter: _swanson
-    #facebook: zuck
+    twitter: gianjohansen
+    facebook: gian.johansen
     #tumblr: animalygifs
-    #linkedin: philipjagielski
+    linkedin: gianjohansen
     #gplus: 110552447039675960964
 
   # "Hi, I'm _______"
@@ -28,7 +28,7 @@ theme:
   tagline: "weak opinions, strongly held"
 
   # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-xxxx-x
+  google_analytics_key: UA-38281823-1
 
   # Toggle "Postings are my own" disclaimer in footer
   show_disclaimer: true
