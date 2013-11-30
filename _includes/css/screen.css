@@ -151,12 +151,38 @@ ul.posts li .post-category {
   overflow: hidden;
 }
 
-nav h1, nav h2 {
-  text-align: center;
+nav img {
+  margin: 0 0;
+}
+nav h1, nav h2, nav h3 {
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+nav h2 {
+  font-size: 24px;
+}
+nav h3 {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999;
+}
+
+nav .nav-links a {
+  color: #999;
+}
+nav .nav-links a:hover {
+  color: #ED4035;
+}
+nav .nav-links a:visited {
+  color: #999;
+}
+nav .nav-links a:active {
+  color: #999;
 }
 
 nav hr {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 15px;
   border: dotted #ddd;
   border-width: 1px 0 0;
