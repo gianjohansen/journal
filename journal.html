@@ -1,0 +1,18 @@
+---
+layout: default
+title: Journal
+---
+
+<div id="home">
+  <h2><i class="fa fa-bookmark"></i> Archive</h2>
+  <ul id="blog-posts" class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %d" }}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <br>
+        <span class="post-category">{{ post.categories | array_to_sentence_string }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
