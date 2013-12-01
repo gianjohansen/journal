@@ -51,18 +51,19 @@ title: Blog Posts
         $('#my-description').css("visibility", "hidden");
         $('#my-buttons').css("visibility", "hidden");
 
-        $('#my-face').css("visibility", "visible");
-        $('#my-face').addClass('animated fadeInUp');
-
+        setTimeout(function () {
+          $('#my-face').css("visibility", "visible");
+          $('#my-face').addClass('animated fadeInUp'); }, 600
+        );
         setTimeout(function () {
             $('#my-description').css("visibility", "visible");
             $('#my-description').addClass('animated fadeInUp'); 
             $('#my-name').css("visibility", "visible");
-            $('#my-name').addClass('animated fadeInUp'); }, 600
+            $('#my-name').addClass('animated fadeInUp'); }, 1200
         );
         setTimeout(function () {
             $('#my-buttons').css("visibility", "visible");
-            $('#my-buttons').addClass('animated fadeInUp'); }, 1200
+            $('#my-buttons').addClass('animated fadeInUp'); }, 1800
         );
     });
     </script>
