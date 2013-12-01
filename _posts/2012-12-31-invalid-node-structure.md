@@ -57,7 +57,7 @@ We can also recover the data on the disk using a Linux liveCD. We'll use <a href
 - When done, restart your computer and the disk should eject automatically.
 
 <img src="/assets/images/32.png">
-<span class="post-caption">As unlikely as it sounds, this is the start of a program that calculates fibonacci numbers.</span>
+<span class="post-caption">Linux to the rescue.</span>
 
 ## Step 4: Replace the drive
 Now that your data is safe, you need to look up the model of your mac to see how to replace its internal hard drive. That's well outside the scope of this article, but just know that it's not as scary as it seems. Try to make sure that the replacement is an SSD. If you're anything like me, this is not an experience you'll want to repeat.
