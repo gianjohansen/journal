@@ -3,7 +3,7 @@ pygments: true
 url: https://github.com/gianjohansen
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore]
-permalink:     none
+permalink:     /journal/:title
 
 # Theme customization - please change from the defaults!
 theme:
@@ -26,10 +26,9 @@ theme:
   # "Hi, I'm _______"
   name: Gian Johansen
   email: gianjohansen@gmail.com
-  tagline: "weak opinions, strongly held"
 
   # Google Analytics key, leave blank to ignore
   google_analytics_key: UA-38281823-1
 
   # Toggle "Postings are my own" disclaimer in footer
-  show_disclaimer: true
+  show_disclaimer: false
