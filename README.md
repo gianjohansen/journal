@@ -2,13 +2,13 @@
 
 This is my blog.
 
+![](/assets/images/gianjohansen.github.io.png?raw=true)
+
 It used to be self-hosted but I decided to move it to GitHub on the recommendation of a few friends.
 
 It's built using [Jekyll](http://jekyllrb.com/), which is something I would definitely recommend for simpler projects like this.
 
 The current design is based on the fantastic [Lagom](https://github.com/swanson/lagom) by [Matt Swanson](https://github.com/swanson).
-
-![](/assets/images/gianjohansen.github.io.png?raw=true)
 
 ## History
 
