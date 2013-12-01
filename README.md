@@ -15,7 +15,7 @@ The current design is based on the fantastic [Lagom](https://github.com/swanson/
 For posterity, here are screenshots of what my blog has looked like over time.
 
 June, 2013
-![](/assets/images/webdev_2013jun.tiff?raw=true)
+![](/assets/images/webdev_2013jun.png?raw=true)
 
 November, 2012
-![](/assets/images/webdev_2012nov.tiff?raw=true)
+![](/assets/images/webdev_2012nov.png?raw=true)
