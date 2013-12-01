@@ -3,6 +3,7 @@ pygments: true
 url: https://github.com/gianjohansen
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore]
+permalink:     none
 
 # Theme customization - please change from the defaults!
 theme:
