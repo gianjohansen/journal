@@ -119,12 +119,16 @@ ul.posts li {
   border-bottom: 1px dotted #ddd;
 }
 
+ul.posts li .post-date-container {
+  float: left;
+  width: 70px;
+  line-height: 1.6;
+  min-height: 60px;
+}
 ul.posts li .post-date {
   color: #999;
   font-size:16px;
   text-transform: uppercase;
-  display:inline-block;
-  width: 66px;
 }
 ul.posts li a {
   font-size:24px;
@@ -138,7 +142,13 @@ ul.posts li .post-category {
   padding-right: 5px;
   text-transform: capitalize;
   display:inline-block;
-  margin-left: 69px;
+}
+@media only screen and (max-width : 960px) {
+  ul.posts li .post-date-container {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
 }
 
 .meta {
