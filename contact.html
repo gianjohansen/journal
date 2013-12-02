@@ -25,16 +25,19 @@ title: Contact
 
   <style>
     body { height: auto; }
+    #contact-modal {
+      display: block;
+      margin: 0 auto;
+      border-bottom: none;
+    }
+    .close {
+      display: none;
+    }
   </style>
 </head>
 <body>
     {% include contact-form.html %}
 
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="/assets/js/jquery.easyModal.js"></script>
-    <script src="/assets/js/functions.js"></script>
-    
 {% include analytics.html %}
 </body>
 </html>

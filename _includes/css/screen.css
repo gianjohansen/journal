@@ -526,6 +526,10 @@ i.fa-hn {
 #contact-success-modal p {
   text-align: center;
 }
+#contact-success-modal img {
+  display: block;
+  margin: 0 auto;
+}
 
 @media only screen and (max-width : 720px) {
   #contact-modal {
