@@ -488,7 +488,7 @@ i.fa-hn {
   font-size: 14px;
   line-height: 1.428571429;
 }
-#contact-modal #contact-submit a {
+#contact-modal #contact-submit button {
   width: 100%;
   font-family: latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
   font-size: 16px;
@@ -503,12 +503,14 @@ i.fa-hn {
   text-decoration: none;
   font-weight: 400;
   color: #fff;
-  background-color: #00CC66;
+  background: #00CC66;
   margin-bottom: 0;
+  border-radius: 0;
+  text-shadow: none;
 }
-#contact-modal #contact-submit a:hover {
+#contact-modal #contact-submit button:hover {
   color: #00cc66;
-  background-color: #fff;
+  background: #fff;
   border: 2px solid #00CC66;
 }
 
