@@ -4,7 +4,7 @@ $('#contact-modal').easyModal({
   overlayColor: "#000"
 });
 $('#open-contact-modal').click(function(e){
-  $('#contact-success-modal').trigger('openModal');
+  $('#contact-modal').trigger('openModal');
   e.preventDefault();
 });
 $('#contact-success-modal').easyModal({
