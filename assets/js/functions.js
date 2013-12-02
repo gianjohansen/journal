@@ -4,8 +4,13 @@ $('#contact-modal').easyModal({
   overlayColor: "#000"
 });
 $('#open-contact-modal').click(function(e){
-  $('#contact-modal').trigger('openModal');
+  $('#contact-success-modal').trigger('openModal');
   e.preventDefault();
+});
+$('#contact-success-modal').easyModal({
+  overlayOpacity : 0.6,
+  overlayClose: true,
+  overlayColor: "#000"
 });
 
 $('#contact-form').submit(function(form) {
@@ -14,9 +19,7 @@ $.ajax({
           url: "http://getsimpleform.com/messages/ajax?form_api_token=eca2adb05b1ade6f67db49e9bdab0822",
           data: $('#contact-form').serialize() 
         }).done(function() {
-          //callback which can be used to show a thank you message
-          //and reset the form
-          alert("Thank you, for contacting us");
+			$('#contact-success-modal').trigger('openModal');
         });
         return false; //to stop the form from submitting
 
