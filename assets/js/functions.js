@@ -6,8 +6,11 @@ $( document ).ready(function() {
 	  overlayColor: "#000"
 	});
 	$('#open-contact-modal').click(function(e){
-	  $('#contact-modal').trigger('openModal');
-	  e.preventDefault();
+		// only open the contact modal if enough space exists for it
+		if (document.documentElement.clientHeight > 595) {
+		  $('#contact-modal').trigger('openModal');
+		  e.preventDefault();
+		}
 	});
 	$('#contact-success-modal').easyModal({
 	  overlayOpacity : 0.6,
