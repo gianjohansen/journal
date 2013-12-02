@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.theme.name }} - {{ page.title }}</title>
   <meta name="author" content="{{ site.theme.name }}" />
-  <meta name="description" content="The blog of {{ site.theme.name }}" />
+  <meta name="description" content="Thoughts from University of Sydney undergrad Gian Johansen" />
   <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
@@ -32,6 +32,38 @@
       </div>
     </div>
   </div>
+
+  <div id="contact-modal">
+    <p>Let's be friends. If you'd like to message me to talk code, employment or anything else, please do. An accompanying offer of coffee couldn't hurt.</p>
+
+    <header>
+      <h1>Message Details</h1>
+    </header>
+    
+    <form id="contact-form" method="post" action="process.php">
+      <div class="contact-form-left">
+        <input id="contact-name" type="text" class="text" name="name" placeholder="Name" />
+      </div>
+      <div class="contact-form-right">
+        <input id="contact-email" type="text" class="text" name="email" placeholder="Email" />
+      </div>
+      <div class="clearfix"></div>
+      <div class="contact-form-fullwidth">
+        <textarea id="contact-message" name="message" placeholder="Message"></textarea>
+      </div>
+      <div id="contact-submit">
+          <button type="submit" id="contact-submit-link" href="#" class="call-to-action-link red-link">Send Message</button>
+      </div>
+    </form>
+
+    <img src="/assets/images/contact-close.png" id="contact-close" class="close">
+  </div>
+
+  <!-- JS -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="/assets/js/jquery.easyModal.js"></script>
+  <script src="/assets/js/functions.js"></script>
 
 {% include analytics.html %}
 </body>

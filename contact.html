@@ -1,0 +1,144 @@
+---
+layout: blank
+title: Contact
+---
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gian Johansen | Contact</title>
+  <meta name="author" content="{{ site.theme.name }}" />
+  <meta name="description" content="Thoughts from University of Sydney undergrad Gian Johansen" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.theme.name }}" href="{{site.url}}/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
+
+  <style>
+    body { height: auto; }
+  </style>
+</head>
+<body>
+  <section id="contact-form-container" class="container">
+      <header class="sixteen columns">
+        <h1>Get In Touch</h1>
+      </header>
+
+      <p class="sixteen columns">Let's be friends. If you'd like to message me to talk code, employment or anything else, please do.</p>
+      
+      <form id="contact-form" method="post" action="email.php" class="row">
+        <div class="eight columns">
+          <input id="contact-name" type="text" class="text" name="name" placeholder="Name" />
+        </div>
+        <div class="eight columns">
+          <input id="contact-email" type="text" class="text" name="email" placeholder="Email" />
+        </div>
+        <div class="sixteen columns">
+          <textarea id="contact-message" name="message" placeholder="Message"></textarea>
+        </div>
+        <div id="contact-submit" class="sixteen columns">
+            <a id="contact-submit-link" href="#" class="call-to-action-link red-link">Send Message</a>
+        </div>
+      </form>
+  </section>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/assets/js/jquery.easyModal.js"></script>
+<style>
+#contact-form-container h1 {
+  margin-top: 4rem;
+  text-align: center;
+} 
+#contact-form-container p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+  color: #222;
+  margin: 2rem 0;
+} 
+
+#contact-form-container textarea {
+  min-height: 14em;
+}
+#contact-form-container input, #contact-form-container textarea {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 16px;
+  padding: 1em 1em;
+  max-width: 100%;
+  font-family: latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+
+  box-sizing: border-box;
+
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#contact-form-container input:focus, #contact-form-container textarea:focus {
+  border: 2px solid #ED4035;
+ 
+}
+
+#contact-form-container #contact-submit {
+  text-align: center;
+}
+
+#contact-form-container #contact-submit a {
+  font-family: latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+  display: inline-block;
+  margin-top: 2rem;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ED4035;
+  background-color: #fff;
+  border: 2px solid #ED4035;
+  margin-bottom: 4rem;
+}
+#contact-form-container #contact-submit a:hover {
+  color: #fff;
+  background-color: #ED4035;
+  border: 2px solid #ED4035;
+}
+
+@media only screen and (max-height : 750px) {
+  #contact-form-container h1 {
+    margin-top: 2rem;
+  } 
+  #contact-form-container p {
+    margin: 1rem 0;
+  } 
+}
+@media only screen and (max-width : 980px) {
+  #contact-form-container p {
+    font-size:18px;
+  } 
+}
+</style>
+
+{% include analytics.html %}
+</body>
+</html>
