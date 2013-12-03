@@ -193,6 +193,9 @@ nav h3 {
   color: #999;
 }
 
+nav .nav-links {
+  line-height: 24px;
+}
 nav .nav-links a {
   color: #222;
   font-weight: 700;
@@ -544,5 +547,93 @@ i.fa-hn {
 @media only screen and (max-width : 720px) {
   #contact-modal {
     width: 360px;
+  }
+}
+
+ul.portfolio {
+  margin-top: 0;
+  list-style-type: none;
+  margin-bottom: -1px;
+}
+
+ul.portfolio .portfolio-listing {
+  line-height: 22px;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  border-bottom: 1px dotted #ddd;
+}
+ul.portfolio li {
+  font-size: 16px;
+}
+ul.portfolio li .portfolio-image-container {
+  width: 100%;
+  line-height: 1.6;
+  position: relative;
+}
+ul.portfolio li .portfolio-image-container .portfolio-image-cover {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background:rgba(255, 255, 255, 0.8);
+color: #ED4035;
+padding-top: 100px;
+text-align: center;
+font-size: 24px;
+opacity: 0;
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -o-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+ul.portfolio li .portfolio-image-container:hover .portfolio-image-cover {
+opacity: 1;
+}
+
+ul.portfolio li .portfolio-image-container img {
+  height: 240px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+ul.portfolio li .portfolio-description-container {
+  color: #999;
+  padding-right: 5px;
+  display:inline;
+}
+
+ul.portfolio li .portfolio-description-container .portfolio-heading {
+  color: #222;
+  font-size: 24px;
+  margin-bottom: 7px;
+  display: inline-block;
+}
+ul.portfolio li .portfolio-description-container .portfolio-heading:hover {
+  color: #ED4035;
+}
+ul.portfolio li .portfolio-description-container .project-description {
+  color: #999;
+  margin-bottom: 24px;
+}
+ul.portfolio li .portfolio-description-container .label-container {
+margin-top: 12px;
+display: inline-block;
+}
+ul.portfolio li .portfolio-description-container .label {
+padding: .2em 8px;
+color: #fff;
+line-height: 1;
+white-space: nowrap;
+vertical-align: baseline;
+}
+
+@media only screen and (max-width : 960px) {
+  ul.portfolio li .post-date-container {
+    float: none;
+    width: 100%;
+    min-height: 0;
   }
 }
