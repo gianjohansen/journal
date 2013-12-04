@@ -591,9 +591,11 @@ opacity: 0;
   transition: all 200ms ease-in;
 }
 
+ul.portfolio li .portfolio-image-container a {
+   cursor: url('/assets/images/portfolio-hover.png'), auto !important;
+}
 ul.portfolio li .portfolio-image-container a:-webkit-any-link {
    cursor: url('/assets/images/portfolio-hover.png'), auto !important;
-
 }
 ul.portfolio li .portfolio-image-container:hover .portfolio-image-cover {
 opacity: 1;
