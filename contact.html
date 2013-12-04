@@ -23,15 +23,30 @@ title: Contact
   <link rel="stylesheet" href="/assets/css/all.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
 
+  <!-- override the global contact styles because this one isn't modal -->
   <style>
     body { height: auto; }
     #contact-modal {
       display: block;
       margin: 0 auto;
       border-bottom: none;
+      width: 100%;
+      padding: 20px;
+      max-width: 720px;
     }
     .close {
       display: none;
+    }
+    #contact-modal #contact-submit #contact-submit-link {
+      margin-bottom: 48px;
+    }
+    @media only screen and (max-width : 550px) {
+      #contact-modal #contact-form .contact-form-left, #contact-modal #contact-form .contact-form-right {
+        width: 100%;
+      }
+      #contact-modal #contact-form .contact-form-left {
+        margin-bottom: 23px;
+      }
     }
   </style>
 </head>
