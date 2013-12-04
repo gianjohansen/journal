@@ -590,6 +590,11 @@ opacity: 0;
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
+
+ul.portfolio li .portfolio-image-container a:-webkit-any-link {
+   cursor: url('/assets/images/portfolio-hover.png'), auto !important;
+
+}
 ul.portfolio li .portfolio-image-container:hover .portfolio-image-cover {
 opacity: 1;
 padding-top: 120px;
