@@ -611,6 +611,9 @@ ul.portfolio li .portfolio-description-container {
   padding-right: 5px;
   display:inline;
 }
+ul.portfolio li .portfolio-description-container .clearfix {
+  margin-bottom: 16px;
+}
 
 ul.portfolio li .portfolio-description-container .portfolio-heading {
   color: #222;
