@@ -1,14 +1,42 @@
 /* Fonts */
 @font-face {
     font-family: 'latolight';
+    src: url('/assets/files/lato-light-webfont.eot');
+    src: url('/assets/files/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/files/lato-light-webfont.woff') format('woff'),
+       url('/assets/files/lato-light-webfont.svg#latolight') format('svg'),
+         url('/assets/files/lato-light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'latolight';
+            src: url('/assets/files/lato-light-webfont.svg#latolight') format('svg');
+		font-weight: 300;
+		font-style: normal;
+    }
+}
+
+@font-face {
+    font-family: 'latolight';
     src: url('/assets/files/lato-regular-webfont.eot');
     src: url('/assets/files/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('/assets/files/lato-regular-webfont.woff') format('woff'),
        url('/assets/files/lato-regular-webfont.svg#latolight') format('svg'),
          url('/assets/files/lato-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'latolight';
+            src: url('/assets/files/lato-regular-webfont.svg#latolight') format('svg');
+		font-weight: 400;
+		font-style: normal;
+    }
+}
+
 @font-face {
     font-family: 'latolight';
     src: url('/assets/files/lato-bold-webfont.eot');
@@ -16,8 +44,16 @@
          url('/assets/files/lato-bold-webfont.woff') format('woff'),
        url('/assets/files/lato-bold-webfont.svg#latobold') format('svg'),
          url('/assets/files/lato-bold-webfont.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'latolight';
+            src: url('/assets/files/lato-bold-webfont.svg#latobold') format('svg');
+		font-weight: 700;
+		font-style: normal;
+    }
 }
 
 * {
