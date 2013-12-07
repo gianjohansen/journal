@@ -1,21 +1,13 @@
 /* Fonts */
 @font-face {
     font-family: 'latolight';
-    src: url('/assets/files/lato-light-webfont.eot');
-    src: url('/assets/files/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/files/lato-light-webfont.woff') format('woff'),
-       url('/assets/files/lato-light-webfont.svg#latolight') format('svg'),
-         url('/assets/files/lato-light-webfont.ttf') format('truetype');
+    src: url('/assets/files/lato-regular-webfont.eot');
+    src: url('/assets/files/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/files/lato-regular-webfont.woff') format('woff'),
+       url('/assets/files/lato-regular-webfont.svg#latolight') format('svg'),
+         url('/assets/files/lato-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'latolight';
-            src: url('/assets/files/lato-light-webfont.svg#latolight') format('svg');
-		font-weight: normal;
-		font-style: normal;
-    }
 }
 @font-face {
     font-family: 'latolight';
