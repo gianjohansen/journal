@@ -1,61 +1,4 @@
 /* Fonts */
-@font-face {
-    font-family: 'latolight';
-    src: url('/assets/files/lato-light-webfont.eot');
-    src: url('/assets/files/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/files/lato-light-webfont.woff') format('woff'),
-       url('/assets/files/lato-light-webfont.svg#latolight') format('svg'),
-         url('/assets/files/lato-light-webfont.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'latolight';
-            src: url('/assets/files/lato-light-webfont.svg#latolight') format('svg');
-		font-weight: 300;
-		font-style: normal;
-    }
-}
-
-@font-face {
-    font-family: 'latolight';
-    src: url('/assets/files/lato-regular-webfont.eot');
-    src: url('/assets/files/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/files/lato-regular-webfont.woff') format('woff'),
-       url('/assets/files/lato-regular-webfont.svg#latolight') format('svg'),
-         url('/assets/files/lato-regular-webfont.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'latolight';
-            src: url('/assets/files/lato-regular-webfont.svg#latolight') format('svg');
-		font-weight: 400;
-		font-style: normal;
-    }
-}
-
-@font-face {
-    font-family: 'latolight';
-    src: url('/assets/files/lato-bold-webfont.eot');
-    src: url('/assets/files/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/files/lato-bold-webfont.woff') format('woff'),
-       url('/assets/files/lato-bold-webfont.svg#latobold') format('svg'),
-         url('/assets/files/lato-bold-webfont.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'latolight';
-            src: url('/assets/files/lato-bold-webfont.svg#latobold') format('svg');
-		font-weight: 700;
-		font-style: normal;
-    }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -78,8 +21,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #181818;
-  font-family: source-sans-pro, latolight, Lato, "open sans", sans-serif;
-  font-weight: 700;
+  font-family: source-sans-pro, 'Open Sans', 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 h1.title {
@@ -324,7 +267,7 @@ height: 100%;
 
 .sidebar {
   padding-top: 25px;
-  font-family: source-sans-pro, latolight, Lato, "open sans", sans-serif;
+  font-family: source-sans-pro, 'Open Sans', 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
   opacity: 0.3;
   -webkit-transition: opacity 200ms ease;
   -moz-transition: opacity 200ms ease;
@@ -337,7 +280,7 @@ height: 100%;
 }
 
 .content {
-  font: 300 16px/22px source-sans-pro, latolight, Lato, "open sans", sans-serif;
+  font: 300 16px/22px source-sans-pro, 'Open Sans', 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
   border-left: 1px solid #DDD;
   padding-left: 40px;
   padding-top: 25px;
@@ -497,14 +440,14 @@ i.fa-hn {
   margin-bottom: 18px;
   font-size: 24px;
   text-align: left;
-  font-family: source-sans-pro, latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+  font-family: source-sans-pro, 'Open Sans', 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 300;
 } 
 #contact-modal p {
   text-align: left;
   font-size: 16px;
   line-height: 1.5;
-  font-family: source-sans-pro, latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+  font-family: source-sans-pro, 'Open Sans', 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
   color: #222;
   margin: 0 0;
   font-weight: 300;
@@ -526,7 +469,7 @@ i.fa-hn {
   padding: 10px 10px;
   max-width: 100%;
   margin-bottom: 0;
-  font-family: source-sans-pro, latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+  font-family: source-sans-pro, 'Open Sans', 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
 
   box-sizing: border-box;
 
@@ -543,7 +486,7 @@ i.fa-hn {
 }
 
 #contact-modal #contact-submit {
-  font-family: source-sans-pro, latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+  font-family: source-sans-pro, 'Open Sans', 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   -moz-box-sizing: border-box; 
@@ -551,7 +494,7 @@ i.fa-hn {
 }
 #contact-modal #contact-submit button {
   width: 100%;
-  font-family: source-sans-pro, latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+  font-family: source-sans-pro, 'Open Sans', 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
   display: inline-block;
   margin-top: 2.2em;
@@ -562,7 +505,7 @@ i.fa-hn {
   -moz-transition: all ease 0.3s;
   transition: all ease 0.3s;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff;
   background: #00CC66;
   margin-bottom: 0;
@@ -584,7 +527,7 @@ i.fa-hn {
   border-bottom: 12px solid #00CC66;
   padding: 36px;
   display: none;
-  font-family: source-sans-pro, latolight, Lato, sans-serif;
+  font-family: source-sans-pro, 'Open Sans', 'PT Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 #contact-success-modal p {
   text-align: center;
