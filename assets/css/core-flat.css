@@ -384,3 +384,7 @@ text-decoration: none;
     width: 360px;
   }
 }
+
+#my-face, #my-name, #my-description, #my-buttons {
+  visibility: hidden;
+}

@@ -27,6 +27,15 @@ title: Home
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="/assets/js/jquery.easyModal.js"></script>
     <script src="/assets/js/functions.js"></script>
+
+    <!-- if javascript is disabled then the fadein events won't fire -->
+    <noscript>
+        <style>
+          #my-face, #my-name, #my-description, #my-buttons {
+            visibility: visible;
+          }
+        </style>
+    </noscript>
   </head>
 
   <body>
@@ -50,25 +59,20 @@ title: Home
     {% include contact-form.html %}
 
     <script>
-    $( document ).ready(function() {
-        $('#my-face').css("visibility", "hidden");
-        $('#my-name').css("visibility", "hidden");
-        $('#my-description').css("visibility", "hidden");
-        $('#my-buttons').css("visibility", "hidden");
+    $( window ).load(function() {
+        $('#my-face').css("visibility", "visible");
+        $('#my-face').addClass('animated fadeInUp');
 
-        setTimeout(function () {
-          $('#my-face').css("visibility", "visible");
-          $('#my-face').addClass('animated fadeInUp'); }, 600
-        );
         setTimeout(function () {
             $('#my-description').css("visibility", "visible");
             $('#my-description').addClass('animated fadeInUp'); 
             $('#my-name').css("visibility", "visible");
-            $('#my-name').addClass('animated fadeInUp'); }, 1200
+            $('#my-name').addClass('animated fadeInUp'); }, 600
         );
+
         setTimeout(function () {
             $('#my-buttons').css("visibility", "visible");
-            $('#my-buttons').addClass('animated fadeInUp'); }, 1800
+            $('#my-buttons').addClass('animated fadeInUp'); }, 1200
         );
     });
     </script>
