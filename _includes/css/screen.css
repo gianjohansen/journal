@@ -308,7 +308,7 @@ height: 100%;
 
 .footer {
   width: 100%;
-  padding-top: 14px;
+  padding-top: 13px;
 }
 
 .footer {
@@ -625,7 +625,7 @@ ul.portfolio li .portfolio-description-container .portfolio-heading:hover {
   color: #ED4035;
 }
 ul.portfolio li .portfolio-description-container .project-description {
-  color: #999;
+  color: #222;
   margin-bottom: 24px;
 }
 ul.portfolio li .portfolio-description-container .label-container {
