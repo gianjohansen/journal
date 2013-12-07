@@ -78,8 +78,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #181818;
-  font-family: latolight, Lato, "open sans", sans-serif;
-  font-weight: 600;
+  font-family: 'Nimbus Sans', latolight, Lato, "open sans", sans-serif;
+  font-weight: 700;
 }
 
 h1.title {
@@ -321,7 +321,7 @@ height: 100%;
 
 .sidebar {
   padding-top: 25px;
-  font-family: latolight, Lato, "open sans", sans-serif;
+  font-family: 'Nimbus Sans', latolight, Lato, "open sans", sans-serif;
   opacity: 0.3;
   -webkit-transition: opacity 200ms ease;
   -moz-transition: opacity 200ms ease;
@@ -334,7 +334,7 @@ height: 100%;
 }
 
 .content {
-  font: 400 16px/22px latolight, Lato, "open sans", sans-serif;
+  font: 400 16px/22px 'Nimbus Sans', latolight, Lato, "open sans", sans-serif;
   border-left: 1px solid #DDD;
   padding-left: 40px;
   padding-top: 25px;
@@ -492,14 +492,14 @@ i.fa-hn {
   margin-bottom: 18px;
   font-size: 24px;
   text-align: left;
-  font-family: latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+  font-family: 'Nimbus Sans', latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
   font-weight: 400;
 } 
 #contact-modal p {
   text-align: left;
   font-size: 16px;
   line-height: 1.5;
-  font-family: latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+  font-family: 'Nimbus Sans', latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
   color: #222;
   margin: 0 0;
 } 
@@ -518,7 +518,7 @@ i.fa-hn {
   padding: 10px 10px;
   max-width: 100%;
   margin-bottom: 0;
-  font-family: latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+  font-family: 'Nimbus Sans', latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
 
   box-sizing: border-box;
 
@@ -533,13 +533,13 @@ i.fa-hn {
 }
 
 #contact-modal #contact-submit {
-  font-family: latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+  font-family: 'Nimbus Sans', latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
 }
 #contact-modal #contact-submit button {
   width: 100%;
-  font-family: latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
+  font-family: 'Nimbus Sans', latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
   font-size: 16px;
   display: inline-block;
   margin-top: 2.2em;
@@ -570,7 +570,7 @@ i.fa-hn {
   border-bottom: 12px solid #00CC66;
   padding: 36px;
   display: none;
-  font-family: latolight, Lato, sans-serif;
+  font-family: 'Nimbus Sans', latolight, Lato, sans-serif;
 }
 #contact-success-modal p {
   text-align: center;
