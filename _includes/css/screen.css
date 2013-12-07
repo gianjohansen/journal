@@ -519,8 +519,8 @@ i.fa-hn {
 #contact-modal input, #contact-modal textarea {
   outline: none;
   width: 100%;
-  background: #eee;
-  border: 2px solid #eee;
+  background: #e7e7e7;
+  border: 2px solid #e7e7e7;
   box-shadow: none;
   font-size: 16px;
   padding: 10px 10px;
@@ -546,6 +546,8 @@ i.fa-hn {
   font-family: source-sans-pro, latolight, Lato, 'Open Sans', 'Helvetica Neue', 'Proxima Nova', Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
 }
 #contact-modal #contact-submit button {
   width: 100%;
@@ -566,6 +568,8 @@ i.fa-hn {
   margin-bottom: 0;
   border-radius: 0;
   text-shadow: none;
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
 }
 #contact-modal #contact-submit button:hover {
   color: #00cc66;
@@ -694,4 +698,4 @@ vertical-align: baseline;
   }
 }
 
-.typekid-badge {display: none !important;}
+.typekit-badge {display: none !important;}
