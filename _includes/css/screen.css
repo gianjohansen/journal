@@ -104,7 +104,7 @@ ul.posts li .post-date-container {
   min-height: 60px;
 }
 ul.posts li .post-date {
-  color: #999;
+  color: #888;
   font-size:16px;
   text-transform: uppercase;
 }
@@ -116,7 +116,7 @@ ul.posts li a:hover {
   color: #ED4035;
 }
 ul.posts li .post-category {
-  color: #999;
+  color: #888;
   padding-right: 5px;
   text-transform: capitalize;
   display:inline-block;
