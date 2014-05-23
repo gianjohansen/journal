@@ -1,6 +1,7 @@
 # gianjohansen.github.io
 
-This is my blog.
+This is my blog. I've migrated it to a separate repo to make way for [my
+portfolio](http://gianjohansen.github.io/).
 
 ![](/assets/images/gianjohansen.github.io.png?raw=true)
 
