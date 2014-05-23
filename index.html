@@ -1,84 +1,22 @@
 ---
-layout: blank
-title: Home
+layout: default
+title: Journal
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.ico" />
-    <title>Gian Johansen | Home</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <link href="assets/css/core-flat.css" rel="stylesheet">
-    
-    <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-
-    <!-- JS -->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="/assets/js/jquery.easyModal.js"></script>
-    <script src="/assets/js/functions.js"></script>
-
-    <!-- if javascript is disabled then the fadein events won't fire -->
-    <noscript>
-        <style>
-          #my-face, #my-name, #my-description, #my-buttons {
-            visibility: visible;
-          }
-        </style>
-    </noscript>
-  </head>
-
-  <body>
-    <!-- Full Page Image Header Area -->
-    <div id="top" class="header">
-      <div class="vert-text">
-        <div id="header-content">
-          <img id="my-face" src="my-face-2.png">
-          <h1 id="my-name">Hi! I'm Gian Johansen.</h1>
-          <h3 id="my-description">I'm a software engineer, web developer and amateur snowboarding enthusiast living in Sydney, Australia.</h3>
-          <div id="my-buttons" class="header-social-buttons">
-            <a class="header-social-buttons-link" href="/journal.html">Journal</a>
-            <a class="header-social-buttons-link" href="/portfolio.html">Portfolio</a>
-            <a id="open-contact-modal" class="header-social-buttons-link" href="/contact.html">Contact</a>
-          </div>
+<div id="home">
+  <h2><i class="fa fa-bookmark"></i> Archive</h2>
+  <ul id="blog-posts" class="posts">
+    {% for post in site.posts %}
+      <li>
+        <div class="post-date-container">
+          <span class="post-date">{{ post.date | date: "%b %d" }}</span>
         </div>
-      </div>
-    </div>
-    <!-- /Full Page Image Header Area -->
-
-    {% include contact-form.html %}
-
-    <script>
-    $( window ).load(function() {
-        $('#my-face').css("visibility", "visible");
-        $('#my-face').addClass('animated fadeInUp');
-
-        setTimeout(function () {
-            $('#my-description').css("visibility", "visible");
-            $('#my-description').addClass('animated fadeInUp'); 
-            $('#my-name').css("visibility", "visible");
-            $('#my-name').addClass('animated fadeInUp'); }, 600
-        );
-
-        setTimeout(function () {
-            $('#my-buttons').css("visibility", "visible");
-            $('#my-buttons').addClass('animated fadeInUp'); }, 1200
-        );
-    });
-    </script>
-
-{% include analytics.html %}
-
-  </body>
-
-</html>
+        <div class="post-url-container">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <br>
+          <span class="post-category">{{ post.categories | array_to_sentence_string }}</span>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
