@@ -106,22 +106,22 @@ And remember, there's some overlap here. You could use a list as a set by checki
 To decide on an implementation we need to think about the nature of the data that will be stored and how you'll be interacting with it. To illustrate the decisions that go into choosing, I put together these flowcharts. Just start with your interface and answer Y/N to each of the questions ("I don't care" is equivalent to "N").
 
 <center><strong>Interface: List</strong></center>
-<img src="/assets/images/19.png">
+<img src="/journal/assets/images/19.png">
 If you don't need concurrency then use an <a href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html" target="_blank">ArrayList</a>, unless you need a queue-like list implementation (you probably won't) with a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html" target="_blank">LinkedList</a>. If you do need concurrency, we have the <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CopyOnWriteArrayList.html" target="_blank">CopyOnWriteArrayList</a>. It creates a new copy of the list on every write, which enables your concurrent access but is very costly if you have a lot of writes. If that's the case, consider using an ArrayList and providing synchronous access in some other way.<br>
 <strong>Recommended general-purpose implementation: ArrayList</strong>
 
 <center><strong>Interface: Set</strong></center>
-<img src="/assets/images/20.png">
+<img src="/journal/assets/images/20.png">
 Apart from whether or not you need concurrent access, sort order during iteration is realistically the only thing separating the different set classes. If you don't need concurrency and don't care about sort order, use a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html" target="_blank">HashSet</a>. If you want sorted elements then use a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html" target="_blank">TreeSet</a>, if you want order to be the same as input order then use a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashSet.html" target="_blank">LinkedHashSet</a>. For the concurrent classes, if you want sorted elements use a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListSet.html" target="_blank">ConcurrentSkipListSet</a>, otherwise use a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CopyOnWriteArraySet.html" target="_blank">CopyOnWriteArraySet</a> (with the same caveat as with the CopyOnWriteArrayList).<br>
 <strong>Recommended general-purpose implementation: HashSet</strong>
 
 <center><strong>Interface: Map</strong></center>
-<img src="/assets/images/21.png">
+<img src="/journal/assets/images/21.png">
 The map flowchart looks similar to the set flowchart because most set classes are implemented as maps, which is funny because maps aren't technically collections. Anyway, if you need concurrency and sort order we have <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentSkipListMap.html" target="_blank">ConcurrentSkipListMaps</a>, if you need concurrency and don't care about order, we have <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html" target="_blank">ConcurrentHashMaps</a>. For non-concurrent classes, we have <a href="http://docs.oracle.com/javase/7/docs/api/java/util/TreeMap.html" target="_blank">TreeMaps</a> for sorted order, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedHashMap.html" target="_blank">LinkedHashMaps</a> for input order and <a href="http://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html" target="_blank">HashMaps</a> otherwise.<br>
 <strong>Recommended general-purpose implementation: HashMap</strong>
 
 <center><strong>Interface: Queue</strong></center>
-<img src="/assets/images/22.png">
+<img src="/journal/assets/images/22.png">
 The queue implementations are slightly more complicated than the others. Blocking classes can block on push/pop if certain conditions aren't met.If you don't need blocking......and need concurrency, use a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html" target="_blank">ConcurrentLinkedQueue</a>....and you don't need concurrency, you can order by priority with a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html" target="_blank">PriorityQueue</a> or by input order with a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html" target="_blank">LinkedList</a>.If you need blocking......and want priority order, use a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/PriorityBlockingQueue.html" target="_blank">PriorityBlockingQueue</a>....and want a delay system, use a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/DelayQueue.html" target="_blank">DelayQueue</a>....and want a bound on the number of elements, use an <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ArrayBlockingQueue.html" target="_blank">ArrayBlockingQueue</a>. Otherwise, a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/LinkedBlockingQueue.html" target="_blank">LinkedBlockingQueue</a>.Note that a <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/SynchronousQueue.html" target="_blank">SynchronousQueue</a> is roughly the same as a LinkedBlockingQueue with a capacity of 1.<br>
 <strong>Recommended general-purpose implementation: PriorityQueue</strong>
 
@@ -130,7 +130,7 @@ Of course, you can always implement your own collection class if you need some s
 
 If you want to write your own class, you need to implement one of the framework's abstract classes. The classes available to you are <a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractCollection.html" target="_blank">AbstractCollection</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractSet.html" target="_blank">AbstractSet</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractList.html" target="_blank">AbstractList</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractSequentialList.html" target="_blank">AbstractSequentialList</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractQueue.html" target="_blank">AbstractQueue</a> and <a href="http://docs.oracle.com/javase/7/docs/api/java/util/AbstractMap.html" target="_blank">AbstractMap</a>.
 
-<img src="/assets/images/23.png">
+<img src="/journal/assets/images/23.png">
 <span class="post-caption">Where it all begins... except for maps, which don't extend Collection but are in the collection framework just to trip you up.</span>
 
 Creating a custom collection class is outside of the scope of this article so I won't provide any code, but it's no different to implementing any other interface. Just check the API to figure out which methods need to be written, and then provide them and any other methods in your class.

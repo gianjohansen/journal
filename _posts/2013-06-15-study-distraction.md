@@ -7,5 +7,5 @@ categories:
 
 A bit of impromptu headphone repair.
 
-<img src="/assets/images/48.jpg">
+<img src="/journal/assets/images/48.jpg">
 Not pictured: the copious amounts of swearing. Wires are tricky.

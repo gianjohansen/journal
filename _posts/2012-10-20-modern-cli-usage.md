@@ -11,7 +11,7 @@ Alright, I may be exaggerating slightly, but the state of the command line in 20
 
 "But you're oversimplifying", I hear you say. "What about all the things you can do with a command line that you can't with a GUI?". 
 
-<img src="/assets/images/9.png">
+<img src="/journal/assets/images/9.png">
 <span class="post-caption">A classic example, <a href="http://en.wikipedia.org/wiki/Cowsay" target="_blank">cowsay</a>.</span>
 
 ## Command Line Wizardry
@@ -27,7 +27,7 @@ And keep in mind, these are all one-line commands (piped commands still count as
 ## No Shell is an Island
 But of course, that goes both ways. There are lots of tasks that are better done using a GUI, and i'm sure that more tasks will head that way as time goes on. I think the archetypal example of such a task would be editing pictures using something like photoshop (actual manipulation and not resizing, rotating, etc). I'm not sure what photo editing using the command line would be like, but I don't think it'd work.
 
-<img src="/assets/images/11.png">
+<img src="/journal/assets/images/11.png">
 <span class="post-caption">I suspect it'd look something like this</span>
 
 A more techy example is refactoring and code completion in emacs and vim. At the risk of offending the emacs crowd, vim is my editor-of-choice for a lot of my programming work and for any text editing (this post, for example). But for any medium-sized or larger project (e.g. any Java project that will involve more than 3-4 classes), i'm always going to fire up an IDE. It's just not very engineer-like to choose to throw away the efficiency that I would gain from using Eclipse or Visual Studio or whatever. 

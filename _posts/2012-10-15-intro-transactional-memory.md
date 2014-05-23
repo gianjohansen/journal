@@ -31,12 +31,12 @@ When we moved from binary to ASM and then from ASM to high level languages, we w
 To demonstrate the system for ourselves we're going to implement in Java a solution to Dijkstra's <a href="http://en.wikipedia.org/wiki/Dining_philosophers_problem" target="_blank">Dining Philosophers problem</a> using Eclipse. If you've never seen the problem before then I'd highly recommended you read up on it but you can just follow the code if you like.
 
 <ul><li><strong>Step 1</strong>: Support for Transactional Memory in Java exists in the form of the <a href="https://sites.google.com/site/deucestm/" target="_blank">Deuce</a> framework. Grab the source from the <a href="https://github.com/DeuceSTM/DeuceSTM" target="_blank">github repo</a> using 'git clone https://github.com/DeuceSTM/DeuceSTM.git'.</li>
-<li><strong>Step 2</strong>: Now we turn that project into a jar file. Enter the DeuceSTM folder and run 'ant agent-jar' to create deuceAgent.jar inside ./bin. Ignore the warnings. When done, cd into the bin folder.<img src="/assets/images/14.png"></li>
-<li><strong>Step 3</strong>: Now locate the jar runtime archive on your machine (hint: use 'locate rt.jar'). Add the methods from the jar we created to your rt.jar by using 'java -jar deuceAgent.jar rt.jar rt_instrumented.jar' (replace "rt.jar" with the correct location).<img src="/assets/images/15.png"></li>
+<li><strong>Step 2</strong>: Now we turn that project into a jar file. Enter the DeuceSTM folder and run 'ant agent-jar' to create deuceAgent.jar inside ./bin. Ignore the warnings. When done, cd into the bin folder.<img src="/journal/assets/images/14.png"></li>
+<li><strong>Step 3</strong>: Now locate the jar runtime archive on your machine (hint: use 'locate rt.jar'). Add the methods from the jar we created to your rt.jar by using 'java -jar deuceAgent.jar rt.jar rt_instrumented.jar' (replace "rt.jar" with the correct location).<img src="/journal/assets/images/15.png"></li>
 <li><strong>Step 4</strong>: The newly created rt_instrumented.jar is the jar we'll use for this project. Create a new project in Eclipse. Select the src folder in package explorer and then click File > Import > File System, and then browse to the DeuceSTM folder and add the "java" folder in DeuceSTM > src. Then right click the project, select Build Path > Add External Archives, and then select your rt_instrumented.jar. Now the transactional memory library should be set up.</li>
-<li><strong>Step 5</strong>: <a href="/assets/files/DiningPhilosopher.java">Click here</a> to download an implementation of the Dining Philosopher problem <strong>without</strong> any transactions. Add it to your project. Notice the problem that we're trying to solve: it eventually deadlocks.<img src="/assets/images/17.png"></li>
+<li><strong>Step 5</strong>: <a href="/assets/files/DiningPhilosopher.java">Click here</a> to download an implementation of the Dining Philosopher problem <strong>without</strong> any transactions. Add it to your project. Notice the problem that we're trying to solve: it eventually deadlocks.<img src="/journal/assets/images/17.png"></li>
 <li><strong>Step 6</strong>: Lets make this code transactional. We need to change the mechanism we have set up for locking/unlocking. That's this method:
-<img src="/assets/images/16.png">
+<img src="/journal/assets/images/16.png">
 The "synchronized" blocks represent the traditional locking style. First the left chopstick is locked, then the right chopstick, then the code runs. This is where the deadlock happens. In java we declare a method as a transaction using the @Atomic keyword. First we import Deuce using 'import org.deuce.Atomic;'. Then we add @Atomic to the method the same way we would @Override. Finally, we remove the traditional locks. Method getChopsticks() should now look like this:
 
 {% highlight java %}
@@ -52,7 +52,7 @@ public void getChopsticks() {
 	chopsticks[id] = id+1;
 	chopsticks[(id + 1) % total] = id+1;
 }{% endhighlight %}</li>
-<li><strong>Step 7</strong>: Running the code again, we see that it runs without any deadlocks. The entire method now runs properly and you'll see that when a deadlock would have occurred it instead aborts. Mission accomplished.<img src="/assets/images/18.png"></li>
+<li><strong>Step 7</strong>: Running the code again, we see that it runs without any deadlocks. The entire method now runs properly and you'll see that when a deadlock would have occurred it instead aborts. Mission accomplished.<img src="/journal/assets/images/18.png"></li>
 </ul>
  
 ## What Now?

@@ -20,7 +20,7 @@ For a bit of context, let's take a look back to where things started going wrong
 
 Of course, we all know what happened next. In a move that would later result in <a href="http://en.wikipedia.org/wiki/United_States_v._Microsoft"><em>that</em> antitrust case</a>, Microsoft leveraged the dominance of their Windows platform to effectively win the browser wars for them. They did this by bundling IE with windows, which history has shown gave IE a major edge in the market. They integrated it into the kernel, which gave it access to <a href="http://www.sonic.net/~undoc/comes_v_microsoft/comes_v_ms_schulman_opinions.txt">undocumented APIs</a> that gave it an inherent advantage over any third-party competition. Further, <a href="http://www.justice.gov/atr/cases/f3800/msjudgex.htm#vc">restrictive licenses</a> with OEMs meant that attempts to alter IE's prime position in the OS were met with threats of license termination. Competing with this proved too difficult for Netscape and by 2002 IE's market share had increased to 96%.
 
-<img src="/assets/images/33.png">
+<img src="/journal/assets/images/33.png">
 
 ## A Monopoly Can Be A Dangerous Thing
 With no threat of competition, innovation was no longer a priority. IE6 was far from perfect at release, and fixes that should have come quickly and continuously never did. The years that followed are known amongst developers as a kind of Dark Age for the web because of how web and browser development essentially came to a stop. When given control of the market, they showed that their business interests took priority over the continuing evolution of the web. The win for Microsoft had meant a loss for the user.
@@ -29,7 +29,7 @@ The biggest problem with IE was that it compromised security in ways that should
 
 Standards also fell victim during that time. Every web developer alive has felt the pain of spending hours getting a page to look good, only to check it in IE to find an unrecognisable mess. IE's rendering differed from the W3C standard, meaning developers had to choose between designing for IE or designing correctly. Their javascript implementation was incompatible with W3C standards, as was their java implementation. For a long time it felt as though Microsoft wanted to march exclusively to its own beat. This is probably the main reason for the lingering dislike of IE amongst techies; its inconsistencies meant huge increases to project development time. You would write some code, then have to rewrite it with fixes for IE.
 
-<img src="/assets/images/35.png">
+<img src="/journal/assets/images/35.png">
 <span class="post-caption">The <a href="http://www.webstandards.org/files/acid2/test.html#top">same page</a> rendered in Opera 8 (2005), IE6 (2001) and IE7 (2006).</span>
 
 That stagnation continued for years. It wasn't until Mozilla began to eat away at IE's lead that they decided to try to make things right, but even then their effort seemed half-hearted. Their next version, IE7, proved only a slight improvement, despite coming 5 years later. IE8 wasn't much better. If at that point Microsoft had begun leading the charge when it came to emerging web technologies then they most likely would have held onto their majority market share. Unfortunately that just <a href="http://html5readiness.com/">didn't happen</a>, and steady competition from Firefox (and later Chrome) resulted in them falling below 50% in 2009-10.
@@ -43,7 +43,7 @@ Well, yes and no. There's a bigger picture here, and it would be irresponsible n
 
 On the other hand, Microsoft now seem to have a genuine desire to make IE the best browser available again. While it's no secret that's ultimately motivated by money, we can't ignore the benefit that a motivated and enterprising Microsoft brings. As a developer, the <a href="http://www.tomshardware.com/reviews/internet-explorer-10-chrome-23-windows-8,3349.html">improvement</a> that IE10 has delivered over previous versions is just plain inspiring. If that can continue, we may yet see a day in which web developers are no longer haunted by IE in their sleep.
 
-<img src="/assets/images/36.png">
+<img src="/journal/assets/images/36.png">
 <span class="post-caption">Benchmarking from <a href="http://www.lucidchart.com/techblog/2012/11/14/ie10-how-does-it-really-stack-up/">Lucidchart</a> in November showed IE10 almost as fast as Chrome.</span>
 
 It seems that all we can do is wait and see how the next few years play out for Microsoft. If IE were to become good enough that techies no longer felt obligated to switch browsers, I feel we'd be in serious trouble. It's happened before, like when Microsoft entered the antivirus market a few years ago. Amongst tech communities they quickly became the standard recommendation for antivirus software, but not because they were noticeably better than their competitors. They became the standard because their product was good enough to do the job and was available for free for all Windows users. What if IE were to become good enough? 

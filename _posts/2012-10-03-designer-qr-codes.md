@@ -17,16 +17,16 @@ QR codes use this principle by adding error correcting sections to whatever data
 ## 30% Prettier Codes?
 QR codes were originally created for the automotive industry to allow car manufacturers to quickly identify components, and their default look clearly emphasises function over form. "Designer QR codes" are what you get when you add a bit of artistic flair to that default look. Compare the QR code on the left here (a standard QR code pointing to http://www.reslabs.com.au) to the two personalised ones for Merge 104.8 and Imax:
 
-<img src="/images/7.png" style="width:80%; max-width:851px;">
+<img src="/journal/images/7.png" style="width:80%; max-width:851px;">
 The codes on the right are much more visually appealing, which means they're more likely to attract attention, which means more scans. So how do we create one?
 
 ## The Not-So-Easy Way
 If you want something totally unique, photoshop is where you need to be. You'll need to go to an online service such as <a href="http://goqr.me/" target="_blank">goqr</a> to create the basic code, making sure that it has the maximum 30% error correction. You can tell what percentage a code is using by the bits to the right of the lower left positioning box ('H' is 30%):
 
-<img src="/images/8.png">
+<img src="/journal/images/8.png">
 What you need to remember when designing your code is that not all the bits on the code can be changed. Some of the bits are used as metadata that describe how the rest of the code should be interpreted, and need to be left alone. 
 
-<img src="/images/12.png" style="width:100%; height:auto; max-width:372px;">
+<img src="/journal/images/12.png" style="width:100%; height:auto; max-width:372px;">
 The above image from wikipedia shows which parts of a QR code are safe to edit and which aren't. The greyed areas contain the actual data, and so it's just a case of editing there and making sure to keep 70% of the bits.
 
 You can also use colour to make your code unique. You can recolour any of the bits, as long as you stick to dark-on-light and make sure that there's enough contrast that it can be scanned.
@@ -36,7 +36,7 @@ And remember, it's important to rescan the code often while editing to make sure
 ## The Slightly Easier Way
 There are several online QR code generators that offer some customization. The most impressive i've found is <a href="http://www.qrhacker.com" target="_blank">QRhacker</a>. It offers a WYSIWIG editor that lets you add backgrounds, change colours, overlay images and modify the code pixel-by-pixel.
 
-<img src="/images/6.png" style="width:80%; max-width:1260px;">
+<img src="/journal/images/6.png" style="width:80%; max-width:1260px;">
 Of course, designing using a service like that is similar to using a wordpress theme for your website: it'll be unique enough for most cases but is too limited to be really special. And note that the caveats I mentioned earlier also apply here. Prepare for a whole lot of trial-and-error.
 
 There's a real lack of creativity in how most QR codes are used. Like any new technology it'll take a while before we really understand how to make full use of their potential. Making them stand out like this so that they're not visually indistinct from regular barcodes is a good start.

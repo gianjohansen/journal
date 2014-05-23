@@ -12,7 +12,7 @@ Let's start from the beginning. Apple use a file system called HFS+ in OS X. HFS
 
 Symptoms of this problem include an abnormally long boot time with frequent kernel panics, and then when OS X does manage to load it will be too slow to use. Eventually it'll refuse to boot at all. 
 
-<img src="/assets/images/29.jpg">
+<img src="/journal/assets/images/29.jpg">
 <span class="post-caption">Look familiar?</span>
 
 ## Step 1: Disk Utility
@@ -31,7 +31,7 @@ At this point it'll either fix the problem and you can go on as normal, or it'll
 
 If it tells you that the system cannot be repaired, go on to the next step. Otherwise, it will have fixed the problem with your file system's catalog, and you can go back into Disk Utility and click repair, and it will work.
 
-<img src="/assets/images/31.png">
+<img src="/journal/assets/images/31.png">
 <span class="post-caption">Hope for a screen like this.</span>
 
 ## Optional: DiskWarrior
@@ -56,7 +56,7 @@ We can also recover the data on the disk using a Linux liveCD. We'll use <a href
 - Next, open a terminal window. Type 'sudo nemo' to open a file browser with elevated privileges. From here, you can browse the mac disk and copy files from it. Alternatively, use 'sudo su' to get root access and go from there if you prefer the command line (note: you won't be able to access OS X's files without root).
 - When done, restart your computer and the disk should eject automatically.
 
-<img src="/assets/images/32.png">
+<img src="/journal/assets/images/32.png">
 <span class="post-caption">Linux to the rescue.</span>
 
 ## Step 4: Replace the drive

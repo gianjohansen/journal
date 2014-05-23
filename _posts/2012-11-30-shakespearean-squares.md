@@ -10,13 +10,13 @@ It's no secret that as long as final exams exist, they're <a href="http://www.ta
 ## The Shakespearean Programming Language
 It's a safe bet to assume that most programming languages are designed to be readable (or at least not unreadable). There's a class of languages, however, that are designed to subvert that while still remaining functional. <a href="http://en.wikipedia.org/wiki/Whitespace_(programming_language)" target="_blank">Whitespace</a>, for example, ignores any characters that aren't whitespace, so entire programs are written using only spaces, tabs and newlines. Another example, <a href="http://en.wikipedia.org/wiki/Piet_(programming_language)" target="_blank">Piet</a>, involves creating abstract art-like bitmaps that resemble works by Piet Mondrian. My favourite (if only for just how absurd the concept is) has always been the Shakespearean Programming Language (SPL). Writing code in SPL involves unleashing one's inner muse to write plays that would make Shakespeare proud. Well, as much as lines of executable code could.
 
-<img src="/assets/images/26.gif">
+<img src="/journal/assets/images/26.gif">
 <span class="post-caption"><a href="http://en.wikipedia.org/wiki/LOLCODE" target="_blank">LOLCODE</a> is designed to be a prettier version of C.</span>
 
 ## How It Works
 A program in SPL is split into several logical sections, mimicking play conventions. We'll start by having a look at some sample code to see what the end result will be.
 
-<img src="/assets/images/28.png">
+<img src="/journal/assets/images/28.png">
 <span class="post-caption">As unlikely as it sounds, this is the start of a program that calculates fibonacci numbers.</span>
 
 1: Title<br>
@@ -109,6 +109,6 @@ Romeo:
 
 And we're done! You can download the finished program <a href="/assets/files/squares.spl">here</a>, and get the compiler <a href="http://shakespearelang.sf.net/download/spl-1.2.1.tar.gz">here [.tar.gz]</a>. As you can see, the program waits for an input and then outputs the squares that you ask for.
 
-<img src="/assets/images/25.png">
+<img src="/journal/assets/images/25.png">
 
 As a follow up, try modifying this to include a stack, using "Remember" and "Recall" for pushing and popping respectively. I should warn you now, once you've started with these languages it's hard to stop. I guess it beats finals though, right?
