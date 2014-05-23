@@ -3,7 +3,7 @@ pygments: true
 url: https://github.com/gianjohansen
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore]
-permalink:     /journal/:title
+permalink:     /:title
 
 # Theme customization - please change from the defaults!
 theme:
