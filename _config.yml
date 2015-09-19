@@ -1,9 +1,13 @@
 # General Jekyll Config
-pygments: true
 url: https://github.com/gianjohansen
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore]
 permalink:     /journal/:title
+
+# blog details
+title: 'Journal - Gian Johansen | Web Developer'
+tagline: 'I&#39;m Gian, a front-end web developer. I help turn brands into digital experiences because every brand has a story to tell. I&#39;m currently lead front-end engineer at OpenAgent.'
+sidebar_image: /images/sidebar-cover.jpg
 
 # Theme customization - please change from the defaults!
 theme:
