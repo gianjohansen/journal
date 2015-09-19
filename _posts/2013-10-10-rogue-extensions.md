@@ -5,9 +5,7 @@ categories:
 - Web Development
 ---
 
-There are plenty of not-so-nice developers out there.
-
-I'd noticed recently while browsing the web that some pages (I'm not sure what the exact criteria was) would have a "height: auto" style automatically added to their top-level html tag just after loading, even if their height was otherwise specified elsewhere. This destroys layouts that need a fixed height value on their html tag to use when the body tag calculates its size.
+There are plenty of not-so-nice developers out there. I'd noticed recently while browsing the web that some pages (I'm not sure what the exact criteria was) would have a "height: auto" style automatically added to their top-level html tag just after loading, even if their height was otherwise specified elsewhere. This destroys layouts that need a fixed height value on their html tag to use when the body tag calculates its size.
 
 <a target="_blank" href="/journal/images/56.jpg"><img src="/journal/assets/images/56.jpg"></a>
 <span class="post-caption">On the left is Safari loading the page as it's supposed to look, on the right is Chrome with the added height styling.</span>

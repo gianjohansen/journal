@@ -2,21 +2,32 @@
 layout: default
 title: Journal
 ---
-
-<div id="home">
-  <h2><i class="fa fa-bookmark"></i> Archive</h2>
-  <ul id="blog-posts" class="posts">
-    {% for post in site.posts %}
+<header id="home-header" style="background-image: url({{ site.baseurl }}/assets/images/sidebar-cover.jpg);">
+  <a href="{{ site.baseurl }}/" class="home_button"></a>
+  <div class="container">
+    <h1><span class="primary">GIAN</span> JOHANSEN</h1>
+    <ul class="meta">
       <li>
-        <div class="post-date-container">
-          <span class="post-date">{{ post.date | date: "%b %d" }}</span>
-        </div>
-        <div class="post-url-container">
-          <a href="/journal/{{ post.url }}">{{ post.title }}</a>
-          <br>
-          <span class="post-category">{{ post.categories | array_to_sentence_string }}</span>
-        </div>
+        <span>
+          {{ site.tagline }}
+        </span>
       </li>
-    {% endfor %}
-  </ul>
-</div>
+    </ul>
+    <a href="http://github.com/gianjohansen" class="oa-btn" target="_blank">View My GitHub</a>
+  </div>
+</header>
+<article id="home-article">
+  <div class="container">
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li>
+          <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+          <span class="meta">
+            <span class="title-case">{{ post.categories }}</span>
+          </span>
+          {{ post.excerpt }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>

@@ -1,27 +1,46 @@
 ---
 layout: default
 ---
+<header style="background-image: url({{ site.baseurl }}/assets/images/sidebar-cover.jpg);">
+  <div class="container post-container">
+    <a href="{{ site.baseurl }}/journal" class="home_button"></a>
+    <div class="inner-container">
+      <h1>{{ page.title }}</h1>
+      <ul class="meta">
+        <li class="title-case">
+          <span>
+            Category
+          </span>
+          {{ page.categories }}
+        </li>
+        <li>
+          <a href="{{ page.url }}">
+            &#128279; Permalink
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="pagination">
+      {% if page.previous.url %}
+        <li class="previous">
+          <a href="{{ site.baseurl }}{{ page.previous.url }}">
+            Previous
+          </a>
+        </li>
+      {% endif %}
+      {% if page.next.url %}
+      <li class="next">
+        <a href="{{ site.baseurl }}{{ page.next.url }}">
+          Next
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</header>
 
-<p class="meta">
-  {{ page.date | date: "%B %d, %Y" }} 
-  <a href="/journal/journal.html">
-    <i class="home fa fa-home"></i>
-  </a>
-</p>
-
-<h1 class="title">{{ page.title }}</h1>
-
-<div id="post">
-  {{ content }}
-</div>
-
-<div class="post-metadata"> 
-{% if page.previous.url %} 
-  <h3>Previous Post: <a href="{{page.previous.url}}" title="Previous Post: 
-{{page.previous.title}}">{{page.previous.title}}</a></h3>
-{% endif %}
-{% if page.next.url %} 
-        <h3>Next Post: <a href="{{page.next.url}}" title="next Post: 
-{{page.next.title}}">{{page.next.title}}</a></h3>
-{% endif %} 
-</div> 
+<article>
+  <div class="container">
+    {{ content }}
+  </div>
+</article>
