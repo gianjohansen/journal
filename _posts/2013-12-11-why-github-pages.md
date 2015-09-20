@@ -3,10 +3,9 @@ layout: post
 title: Why Github Pages
 categories:
 - Thoughts
-excerpt: Over the past week I've migrated my site to GitHub Pages. I've been meaning to try using a static site generator and the move felt right for a few reasons.
 ---
 
-Over the past week I've migrated my site to GitHub Pages. I've been meaning to try using a static site generator and the move felt right for a few reasons.
+<p>Over the past week I've migrated my site to GitHub Pages. I've been meaning to try using a static site generator and the move felt right for a few reasons.</p>
 
 - **I can leverage github's servers:** Moving to GitHub's CDN and a static site generator from my slow server and CMS saved me about 4 seconds of load time on first visit and 0.2 seconds on subsequent loads. When even a 250ms delay is enough to [turn users away from a site](http://www.nytimes.com/2012/03/01/technology/impatient-web-users-flee-slow-loading-sites.html?pagewanted=all&_r=0), a 4 second improvement is definitely non-trivial. And that performance improvement comes at no cost because GitHub Pages hosting is 100% free.
 
