@@ -9,6 +9,8 @@ title: 'Journal - Gian Johansen | Web Developer'
 tagline: 'I&#39;m Gian, a front-end web developer. I help turn brands into digital experiences because every brand has a story to tell. I&#39;m currently lead front-end engineer at OpenAgent.'
 sidebar_image: /images/sidebar-cover.jpg
 
+baseurl: /journal
+
 # Theme customization - please change from the defaults!
 theme:
   # Color for top bar, links, etc

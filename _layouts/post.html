@@ -3,7 +3,7 @@ layout: default
 ---
 <header style="background-image: url({{ site.baseurl }}/assets/images/sidebar-cover.jpg);">
   <div class="container post-container">
-    <a href="{{ site.baseurl }}/journal" class="home_button"></a>
+    <a href="{{ site.baseurl }}" class="home_button"></a>
     <div class="inner-container">
       <h1>{{ page.title }}</h1>
       <ul class="meta">
@@ -14,7 +14,7 @@ layout: default
           {{ page.categories }}
         </li>
         <li>
-          <a href="{{ page.url }}">
+          <a href="{{ site.baseurl }}{{ page.url }}">
             &#128279; Permalink
           </a>
         </li>
