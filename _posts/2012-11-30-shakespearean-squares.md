@@ -107,7 +107,7 @@ Romeo:
 [Exeunt]
 </pre>
 
-And we're done! You can download the finished program <a href="/assets/files/squares.spl">here</a>, and get the compiler <a href="http://shakespearelang.sf.net/download/spl-1.2.1.tar.gz">here [.tar.gz]</a>. As you can see, the program waits for an input and then outputs the squares that you ask for.
+And we're done! You can download the finished program <a href="/journal/assets/files/squares.spl">here</a>, and get the compiler <a href="http://shakespearelang.sf.net/download/spl-1.2.1.tar.gz">here [.tar.gz]</a>. As you can see, the program waits for an input and then outputs the squares that you ask for.
 
 <img src="/journal/assets/images/25.png">
 

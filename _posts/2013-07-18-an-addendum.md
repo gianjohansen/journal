@@ -5,7 +5,7 @@ categories:
 - Computer Science
 ---
 
-I should probably admit, I didn't particularly like ending <a href="http://www.reslabs.com.au/journal/complexity-rockstars" target="_blank">my post on algorithms</a> at Discrete Fourier Transforms. I just don't have as strong a background in mathematics as I'd like to have in order to really do the concept justice. To set things right, here's an easy to follow explanation of something that I do understand, the P vs NP debate!
+I should probably admit, I didn't particularly like ending <a href="../complexity-rockstars" target="_blank">my post on algorithms</a> at Discrete Fourier Transforms. I just don't have as strong a background in mathematics as I'd like to have in order to really do the concept justice. To set things right, here's an easy to follow explanation of something that I do understand, the P vs NP debate!
 
 So what are P and NP? Simply put, they both represent sets of problems. Specifically, sets of problems that we can give a yes or no answer to, which mathematicians call "decision problems". So what defines each problem set?
 
