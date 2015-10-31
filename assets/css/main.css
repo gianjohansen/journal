@@ -119,6 +119,7 @@ header {
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
+  background-color: #70BEC8;
 }
 
 @media (max-width: 960px) {
