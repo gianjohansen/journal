@@ -3,6 +3,7 @@ layout: post
 title: You Can Accomplish Anything... To An Extent
 categories:
 - Thoughts
+excerpt: <p>Steve Wozniak is unquestionably talented. As a child he spent his free time reading manuals from companies like HP and IBM and refining and improving the minicomputer designs published within them. He wrote in his autobiography that by age 17 he was regularly "redesigning computers (to use) half the number of chips the actual company had in their own design". Here was a kid who wasn't even out of high school yet that was already better than the engineers leading the industry.</p>
 ---
 
 <strong>Edit: Saw an interesting take <a href="http://www.outsideonline.com/1917731/how-athletes-get-great?page=all" target="_blank">here</a>: <em>"...genetics is continually finding now that one person’s hour of practice isn’t as good as the next person’s hour. Talent isn’t something preceding you trying something, but your biological setup that allows you to benefit more than the next guy."</em></strong>
