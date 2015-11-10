@@ -7,6 +7,8 @@ categories:
 
 A recurring rumor surrounding the upcoming release of Samsung's 2016 flagship Galaxy S7 is whether they'll act on their "will they, won't they" relationship with Qualcomm. Samsung ditched Qualcomm's Snapdragon in favour of its own in-house ARM-based Exynos, with the launch of their S6 in 2015. With the upcoming Snapdragon 820's release it might be a good time to rethink that decision. There's a lot to like about Qualcomm's new SoC.
 
+![Snapdragon by Qualcomm](../assets/images/qualcomm_snapdragon.jpg "Snapdragon by Qualcomm")
+
 **X12 LTE modem**
 
 Qualcomm has always been a leader in wireless radio tech and they're continuing that trend by integrating their <a target="_blank" href="https://www.qualcomm.com/products/snapdragon/modems/x12">X12 LTE modem</a> into the 820. The chip has a theoretical max download speed of up to 600Mbps and upload of up to 150Mbps. That's definitely a welcome improvement over the Snapdragon 810's X10, which offers 450Mbps and 50Mbps respectively.
