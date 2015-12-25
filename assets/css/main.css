@@ -108,7 +108,7 @@ header a {
 }
 
 .primary {
-  color: #338492;
+  color: #1B2127;
 }
 
 /* Header */
@@ -182,7 +182,7 @@ header .container {
 }
 .oa-btn:hover {
   background-color: #fff;
-  color: #57C0D2;
+  color: #1B2127;
 }
 @media screen and (min-width: 961px){
   #home-header .container {
@@ -343,7 +343,7 @@ header ul.meta li span {
 
 .pagination a:hover {
   background: #fff;
-  color: #57C0D2;
+  color: #1B2127;
 }
 
 /* Article */
@@ -385,12 +385,16 @@ article li {
 }
 
 article a {
-  color: #338492;
-  text-decoration: none;
+  color: #1B2127;
+  font-style: italic;
 }
 
 article a:hover {
-  text-decoration: underline;
+}
+
+article h2 a {
+  font-style: normal;
+  text-decoration: none;
 }
 
 /* Posts List */
